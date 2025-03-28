@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Information Layout</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #343a40;
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 1rem;
+    color: #343a40;
+}
+
+.box-1 .number { background-color: #005b96; }
+.box-2 .number { background-color: #3e7a4f; }
+.box-3 .number { background-color: #9d2235; }
+.box-4 .number { background-color: #9e2a2b; }
+.box-5 .number { background-color: #ff8f00; }
+.box-6 .number { background-color: #0a365d; }
+.box-7 .number { background-color: #bf1b50; }
+.box-8 .number { background-color: #004a2f; }
+.box-9 .number { background-color: #031c6a; }
+.box-10 .number { background-color: #7b6f6f; }
+.box-11 .number { background-color: #82274d; }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">
+            <div class="number">14+</div>
+            <div class="label">Centres of Excellence</div>
+        </div>
+        <div class="box box-2">
+            <div class="number">17</div>
+            <div class="label">Professional Society Chapters</div>
+        </div>
+        <div class="box box-3">
+            <div class="number">18</div>
+            <div class="label">Technical Advisors on Board</div>
+        </div>
+        <div class="box box-4">
+            <div class="number">70</div>
+            <div class="label">MoUs with leading industries</div>
+        </div>
+        <div class="box box-5">
+            <div class="number">48+</div>
+            <div class="label">Industry Experts on Board to design the curriculum</div>
+        </div>
+        <div class="box box-6">
+            <div class="number">61</div>
+            <div class="label">Collaborations with Research Laboratories</div>
+        </div>
+        <div class="box box-7">
+            <div class="number">55+</div>
+            <div class="label">Industry Experts delivering courses</div>
+        </div>
+        <div class="box box-8">
+            <div class="number">10</div>
+            <div class="label">Adjunct Faculty and Professors of Practice from the Industry</div>
+        </div>
+        <div class="box box-9">
+            <div class="number">57</div>
+            <div class="label">Industry Linkages</div>
+        </div>
+        <div class="box box-10">
+            <div class="number">18+</div>
+            <div class="label">MoUs with academic Institutes</div>
+        </div>
+        <div class="box box-11">
+            <div class="number">80+</div>
+            <div class="label">Alumni Industry Experts</div>
+        </div>
+    </div>
+</body>
+</html>
