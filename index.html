@@ -39,10 +39,42 @@
 		============================================ -->
         <link rel="stylesheet" href="css/responsive.css">
         
+
+        <style>
+
+#admission-btn {
+    position: fixed; /* Make the button float */
+    right: 20px; /* Set the distance from the right side of the page */
+    bottom: 20px; /* Set the distance from the bottom of the page */
+    z-index: 1000; /* Ensure it's on top of other content */
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+}
+
+#admission-btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+
+        </style>
 		
 	    
     </head>
     <body>
+
+            <!-- Admission Button (placed near the bottom right of the page) -->
+            <div class="vertical-center">
+                <button type="button" id="admission-btn" class="npfWidgetButton npfWidget-f1c331aa53f9323f42bb8ab463cdc8e1" onclick="window.open('https://admissions.kumaraguru.edu.in/', '_blank')">Enquire Now</button>
+            </div>
+            
+
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -287,13 +319,13 @@
                                    <p>Situated across three sprawling campuses spanning 280 acres, Kumaraguru Institutions offers 25 Undergraduate programmes, 20 Postgraduate programmes and as many research programmes. Presently, more than 8000 students are imparted quality education in the domains of engineering, technology, management, science, agriculture, innovation, entrepreneurship, liberal arts and humanities. The 35,000+ Kumaraguru alumni spread across 47 countries have forged a global footprint, embodying the institution’s ethos and values.</p> 
                                    <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p> -->
                                    <p>Commemorating <strong>41</strong> years of educational excellence, Kumaraguru Institutions remains committed to its founding vision of empowering conscientious young minds through transformative learning experience.</p>
-                                    <a class="button-default"style="margin-bottom: 12px;" href="#">Learn Now</a>	      
+                                    <!-- <a class="button-default"style="margin-bottom: 12px;" href="#">Learn Now</a>	       -->
                                 </div>
                             </div>
                             <div class="col-lg-5">
                                 <!--About Image Area Start-->
                                 <div class="about-image-area img-full">
-                                    <img src="img\Campus Sky (2).jpg" style="padding-top: 41px; width: 110%;" alt="">
+                                    <img src="img\Campus Sky (2).jpg" style="padding-top: 20px;" alt="">
                                 </div>
                                 <!--About Image Area End-->
                             </div>
