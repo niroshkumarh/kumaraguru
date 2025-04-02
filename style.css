@@ -1796,7 +1796,7 @@ mark {
 
 .fun-factor-area1 {
 	background: rgba(0, 0, 0, 0) url("img/about/CampusSky.jpg") repeat scroll 0 0;
-	color: #ffffff;
+	color: #000000;
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -1823,7 +1823,7 @@ mark {
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	position: relative;
-	/* background: rgba(213, 210, 210, 0.7); */
+	background: rgba(213, 210, 210, 0.7);
 }
 .single-fun-factor:hover {
 	border-color: #1B2840;
