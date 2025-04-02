@@ -1772,7 +1772,7 @@ mark {
 /*----------------------------------------*/
 
 .fun-factor-area {
-	background: rgba(0, 0, 0, 0) url("img/banner/2.jpg") repeat scroll 0 0;
+	background: #00315A repeat scroll 0 0;
 	color: #ffffff;
 	background-size: cover;
 	background-position: top;
@@ -1819,7 +1819,7 @@ mark {
 .single-fun-factor {
 	text-align: center;
 	padding: 40px 20px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(240, 240, 240, 0.8);
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	position: relative;
@@ -1844,7 +1844,7 @@ mark {
 	color: #f9fbff;
 }
 .fun-factor-area.fun-bg-img {
-	background-image: url(img/IMG_7628.jpeg);
+	background-color: #00315A;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1853,7 +1853,7 @@ mark {
 .fun-factor-area1.fun-bg-img1 {
 	background-image: url(img/about/CampusSky.jpg);
 	background-size: cover;
-	background-position: center bottom;
+	background-position: center center;
 	background-repeat: no-repeat;
 }
 
@@ -2052,7 +2052,8 @@ mark {
 .testimonial-area {
 	padding: 75px 0;
 	/* background-image: url(img/banner/7.png); */
-	background-color: #dddcdc;
+	/* background-color: #dddcdc; */
+	background-color: #ffffff;
 	background-size: cover;
 	background-position: center center;
 }
