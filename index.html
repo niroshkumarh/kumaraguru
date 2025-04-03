@@ -403,7 +403,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-12">
                                 <div class="single-fun-factor mb-30">
-                                    <h2><span class="counter">35000</span>+</h2>
+                                    <h2><span class="counter">35</span>K+</h2>
                                     <h4>Alumini</h4>
                                 </div>
                             </div>
@@ -421,6 +421,50 @@
                             </div>
                         </div>
                     </div>
+
+                    <script>
+                        // Function to initialize the counter once on page load
+                        function initializeCounter() {
+                            // Get the stats section
+                            const statsSection = document.getElementById('stats');
+                    
+                            // Check if the counter has already been initialized using a custom attribute
+                            if (statsSection.getAttribute('data-initialized') === 'true') {
+                                return; // If initialized, do nothing
+                            }
+                    
+                            // Set the 'data-initialized' attribute to prevent reinitialization
+                            statsSection.setAttribute('data-initialized', 'true');
+                    
+                            // Initialize the counters (Example: Modify the counter logic as per your need)
+                            const counters = document.querySelectorAll('.counter');
+                    
+                            counters.forEach(counter => {
+                                let target = parseInt(counter.getAttribute('data-target'), 10);
+                                let count = 0;
+                    
+                                // Smooth counter animation
+                                const interval = setInterval(() => {
+                                    if (count < target) {
+                                        count++;
+                                        counter.textContent = count;
+                                    } else {
+                                        clearInterval(interval); // Stop the counter when target is reached
+                                    }
+                                }, 20); // Adjust the speed here if needed
+                            });
+                        }
+                    
+                        // Initialize the counter when the page loads, if it's not already initialized
+                        window.addEventListener('load', function() {
+                            initializeCounter();
+                        });
+                    </script>
+
+
+
+
+
                 </div>
                 <!--End of Fun Factor Area-->   
                 <!--Teachers Area Start--> 
@@ -1053,7 +1097,7 @@
                                 <div class="col-lg-3 col-md-6">
                                     <div class="single-footer-widget">
                                         <div class="footer-logo">
-                                            <a href="https://kct.ac.in"><img src="https://kct.ac.in/wp-content/uploads/2023/02/footer-logo-1.svg" alt="Footer Logo" class="img-fluid footer-logo"></a>
+                                            <a href="https://kumaraguru.in"><img src="/img/college/logowhite.png" alt="Footer Logo" class="img-fluid footer-logo"></a>
                                         </div>
                                         <ul class="list-unstyled" id="getInTouch">
                                             <li class="fotter-contact">Enquiries</li>
