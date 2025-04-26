@@ -1391,92 +1391,154 @@
         </script>
 
         <!-- Modal for Graduation Day -->
-        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-navy text-white">
-                        <h5 class="modal-title" id="imageModalLabel" style="color: white;"> 
-                            <i class="fas fa-graduation-cap mr-2"></i>
-                            37th Graduation Ceremony 2025
-                        </h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <!-- Banner Image -->
-                        <div class="graduation-banner text-center">
-                            <img src="img/about/gradfull.jpeg" alt="37th Graduation Ceremony" class="img-fluid">
-                        </div>
-                        
-                        <!-- Content Section -->
-                        <div class="p-4">
-                            <div class="event-details text-center mb-4">
-                                <h3 class="text-navy" style="font-family: 'Montserrat', sans-serif; font-weight: 600;">Join Us for the Grand Celebration</h3>
-                                <!-- <p class="lead" style="font-family: 'Montserrat', sans-serif; font-weight: 400;">Celebrate the achievements of our graduating students</p>
-                                <p class="venue" style="font-family: 'Montserrat', sans-serif; font-weight: 500;">KUMARAGURU CAMPUS</p> -->
+        <script>
+            // Replace Bootstrap modal with SweetAlert2
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    title: '<h5 style="color: white;"><i class="fas fa-graduation-cap mr-2"></i>37th Graduation Ceremony 2025</h5>',
+                    html: `
+                        <div class="modal-body p-0">
+                            <!-- Banner Image -->
+                            <div class="graduation-banner text-center">
+                                <img src="img/about/gradfull.jpeg" alt="37th Graduation Ceremony" class="img-fluid">
                             </div>
                             
-                            <!-- Day 1 Sessions -->
-                            <div class="day-container mb-4">
-                                <h4 class="day-title">26 APRIL 2025</h4>
-                                <div class="session-container">
-                                    <div class="session-card">
-                                        <div class="session-content">
-                                            <div class="session-info">
-                                                <h3 class="session-time">11:00 AM - 12:30 PM</h3>
-                                                <p class="departments">AI&DS| Computer Science| Electronics & Communication| Electrical & Electronics| Electronics & Instrumentation| Information Science | Information Technology</p>
+                            <!-- Content Section -->
+                            <div class="p-4">
+                                <div class="event-details text-center mb-4">
+                                    <h3 class="text-navy" style="font-family: 'Montserrat', sans-serif; font-weight: 600;">Join Us for the Grand Celebration</h3>
+                                </div>
+                                
+                                <!-- Day 1 Sessions -->
+                                <div class="day-container mb-4">
+                                    <h4 class="day-title">26 APRIL 2025</h4>
+                                    <div class="session-container">
+                                        <div class="session-card">
+                                            <div class="session-content">
+                                                <div class="session-info">
+                                                    <h3 class="session-time">11:00 AM - 12:30 PM</h3>
+                                                    <p class="departments">AI&DS| Computer Science| Electronics & Communication| Electrical & Electronics| Electronics & Instrumentation| Information Science | Information Technology</p>
+                                                </div>
+                                                <a href="https://www.youtube.com/live/iVOPHWbkdNg?si=8XM5W457YV0uMP9j" target="_blank" class="btn btn-navy">
+                                                    <i class="fas fa-video mr-2"></i>Watch Live
+                                                </a>
                                             </div>
-                                            <a href="https://www.youtube.com/live/iVOPHWbkdNg?si=8XM5W457YV0uMP9j" target="_blank" class="btn btn-navy">
-                                                <i class="fas fa-video mr-2"></i>Watch Live
-                                            </a>
                                         </div>
-                                    </div>
-                                    <div class="session-card">
-                                        <div class="session-content">
-                                            <div class="session-info">
-                                                <h3 class="session-time">2:30 PM - 4:00 PM</h3>
-                                                <p class="departments">Aeronautical| Automobile| Biotechnology| Civil| Fashion| Mechatronics| Mechanical| Textile</p>
+                                        <div class="session-card">
+                                            <div class="session-content">
+                                                <div class="session-info">
+                                                    <h3 class="session-time">2:30 PM - 4:00 PM</h3>
+                                                    <p class="departments">Aeronautical| Automobile| Biotechnology| Civil| Fashion| Mechatronics| Mechanical| Textile</p>
+                                                </div>
+                                                <a href="https://www.youtube.com/live/iVOPHWbkdNg?si=8XM5W457YV0uMP9j" target="_blank" class="btn btn-navy">
+                                                    <i class="fas fa-video mr-2"></i>Watch Live
+                                                </a>
                                             </div>
-                                            <a href="https://www.youtube.com/live/iVOPHWbkdNg?si=8XM5W457YV0uMP9j" target="_blank" class="btn btn-navy">
-                                                <i class="fas fa-video mr-2"></i>Watch Live
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Day 2 Sessions -->
-                            <div class="day-container">
-                                <h4 class="day-title">27 APRIL 2025</h4>
-                                <div class="session-container">
-                                    <div class="session-card">
-                                        <div class="session-content">
-                                            <div class="session-info">
-                                                <h3 class="session-time">11:00 AM - 12:30 PM</h3>
-                                                <p class="departments">Management Studies| Computer Applications</p>
+                                <!-- Day 2 Sessions -->
+                                <div class="day-container">
+                                    <h4 class="day-title">27 APRIL 2025</h4>
+                                    <div class="session-container">
+                                        <div class="session-card">
+                                            <div class="session-content">
+                                                <div class="session-info">
+                                                    <h3 class="session-time">11:00 AM - 12:30 PM</h3>
+                                                    <p class="departments">Management Studies| Computer Applications</p>
+                                                </div>
+                                                <a href="https://www.youtube.com/live/uYjtaP4g9gg?si=htlseQkrPPSKjyIX" target="_blank" class="btn btn-navy">
+                                                    <i class="fas fa-video mr-2"></i>Watch Live
+                                                </a>
                                             </div>
-                                            <a href="https://www.youtube.com/live/uYjtaP4g9gg?si=htlseQkrPPSKjyIX" target="_blank" class="btn btn-navy">
-                                                <i class="fas fa-video mr-2"></i>Watch Live
-                                            </a>
                                         </div>
-                                    </div>
-                                    <div class="session-card">
-                                        <div class="session-content">
-                                            <div class="session-info">
-                                                <h3 class="session-time">2:30 PM - 4:00 PM</h3>
-                                                <p class="departments">Liberal Arts and Science</p>
+                                        <div class="session-card">
+                                            <div class="session-content">
+                                                <div class="session-info">
+                                                    <h3 class="session-time">2:30 PM - 4:00 PM</h3>
+                                                    <p class="departments">Liberal Arts and Science</p>
+                                                </div>
+                                                <a href="https://www.youtube.com/live/uYjtaP4g9gg?si=htlseQkrPPSKjyIX" target="_blank" class="btn btn-navy">
+                                                    <i class="fas fa-video mr-2"></i>Watch Live
+                                                </a>
                                             </div>
-                                            <a href="https://www.youtube.com/live/uYjtaP4g9gg?si=htlseQkrPPSKjyIX" target="_blank" class="btn btn-navy">
-                                                <i class="fas fa-video mr-2"></i>Watch Live
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    `,
+                    width: '92%',
+                    padding: 0,
+                    background: '#fff',
+                    showCloseButton: true,
+                    showConfirmButton: false,
+                    customClass: {
+                        popup: 'swal-wide',
+                        header: 'swal-header',
+                        closeButton: 'swal-close-button'
+                    },
+                    backdrop: 'rgba(255,255,255,0.95)',
+                    allowOutsideClick: true,
+                    didOpen: () => {
+                        // Add custom styles for SweetAlert
+                        const style = document.createElement('style');
+                        style.textContent = `
+                            .swal-wide {
+                                max-width: 650px !important;
+                                border-radius: 12px !important;
+                                margin: 10px auto !important;
+                                border: 2px solid rgba(27, 40, 64, 0.2) !important;
+                                box-shadow: 0 2px 10px rgba(27, 40, 64, 0.1) !important;
+                            }
+                            .swal2-popup {
+                                padding: 0 !important;
+                            }
+                            .swal2-header {
+                                background-color: #1b2840 !important;
+                                padding: 12px 15px !important;
+                                border-radius: 10px 10px 0 0 !important;
+                            }
+                            .swal2-title {
+                                margin: 0 !important;
+                                padding: 0 !important;
+                            }
+                            .swal2-close {
+                                color: #1b2840 !important;
+                                font-size: 24px !important;
+                                font-weight: 600 !important;
+                                transition: color 0.2s ease !important;
+                            }
+                            .swal2-close:hover {
+                                color: #2c3e50 !important;
+                            }
+                            .swal2-html-container {
+                                margin: 0 !important;
+                                padding: 0 !important;
+                            }
+                            @media (max-width: 768px) {
+                                .swal-wide {
+                                    margin: 0 auto !important;
+                                    min-height: 100vh !important;
+                                    border-radius: 0 !important;
+                                    border: none !important;
+                                }
+                                .swal2-header {
+                                    border-radius: 0 !important;
+                                }
+                            }
+                        `;
+                        document.head.appendChild(style);
+                    }
+                });
+            });
+        </script>
+
+        <!-- Remove the old Bootstrap modal -->
+        <!-- <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true"> -->
+// ... remove the old modal HTML ...
+        <!-- </div> -->
 
         <style>
             .modal-dialog {
