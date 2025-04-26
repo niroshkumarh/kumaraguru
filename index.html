@@ -10,6 +10,9 @@
         <meta property="og:title" content="Kumaraguru Institutions">
 <meta property="og:image" content="https://campus.kumaraguru.in/static/bootstrap/img/KILogo.jpeg">
 
+<!-- Import Montserrat Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <!-- Include SweetAlert2 CSS and JS -->
 <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
@@ -29,51 +32,172 @@
 	   
 		<!-- Bootstrap CSS
 		============================================ -->		
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         
 		<!-- Fontawsome CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
         
         <!-- Metarial Iconic Font CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.min.css">
         
         <!-- Plugin CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/plugin.css">
+        <link rel="stylesheet" type="text/css" href="css/plugin.css">
         
 		<!-- Style CSS
 		============================================ -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         
 		<!-- Responsive CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         
 
         <style>
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
 
 #admission-btn {
-    position: fixed; /* Make the button float */
-    right: 20px; /* Set the distance from the right side of the page */
-    bottom: 20px; /* Set the distance from the bottom of the page */
-    z-index: 1000; /* Ensure it's on top of other content */
-    padding: 10px 20px; /* Add padding to the button */
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove button border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Adjust font size */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #admission-btn:hover {
-    background-color: #0056b3; /* Darker color on hover */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #0056b3;
+    cursor: pointer;
 }
 
+/* Unique Image Container Style */
+.unique-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/about/Campus Sky.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif !important;
+}
 
+/* Unique Text Overlay Style */
+.unique-text-overlay {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif !important;
+}
 
+.about-container {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.section-title h3 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.section-title p {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.footer-list li a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.footer-widget-area h3 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.footer-area span {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.footer-area a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#getInTouch li {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#getInTouch li a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.modal-title {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.modal-body h3 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.modal-body p {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.modal-body ul li {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Additional elements that might need Montserrat */
+.nav li a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.button-default {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.counter {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.single-fun-factor h2, 
+.single-fun-factor h4 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.footer-widget-area .footer-logo {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.column-right span {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.social-media-icon a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.quick-links a {
+    font-family: 'Montserrat', sans-serif !important;
+}
         </style>
 		
 	    
@@ -141,7 +265,7 @@
                                                     </li>
                                                     <li><a href="#ride-section">RIDE</a></li>
 
-                                                    <li><a href="#ride-section2">International</a></li>
+                                                    <!-- <li><a href="#ride-section2">International</a></li> -->
                                                     <!-- <li><a href="gallery.html">Gallery</a>
                                                         <ul class="sub-menu">
                                                             <li><a href="gallery.html">Gallery</a></li>
@@ -243,7 +367,7 @@
                                                 </li>
                                                 <!-- <li><a href="gallery.html">Gallery</a> -->
                                                     <li><a href="#ride-section">RIDE</a></li>
-                                                    <li><a href="#ride-section2">International</a></li>
+                                                    <!-- <li><a href="#ride-section2">International</a></li> -->
 
 
                                                     <!-- <ul>
@@ -335,7 +459,7 @@
 
                         <p>Kumaraguru Institutions, a multifaceted hub of learning instituted in 1984 with Kumaraguru College of Technology <strong>(KCT)</strong>, KCT Business School <strong>(KCT BS)</strong> in 2005, Kumaraguru Institute of Agriculture <strong>(KIA)</strong> in 2014 Kumaraguru College of Liberal Arts and Science <strong>(KCLAS)</strong> in 2018 and Kumaraguru School of Business <strong>(KSB)</strong> in 2022, is an integral part of Sakthi Group established by visionary statesman Arutchelvar Dr. N. Mahalingam.</p>
 
-                        <p>Situated across three sprawling campuses spanning 280 acres, Kumaraguru Institutions offers 25 Undergraduate programmes, 20 Postgraduate programmes and as many research programmes. Presently, more than 8000 students are imparted quality education in the domains of engineering, technology, management, science, agriculture, innovation, entrepreneurship, liberal arts and humanities. The 35,000+ Kumaraguru alumni spread across 47 countries have forged a global footprint, embodying the institution’s ethos and values.</p> 
+                        <p>Situated across three sprawling campuses spanning 280 acres, Kumaraguru Institutions offers 25 Undergraduate programmes, 20 Postgraduate programmes and as many research programmes. Presently, more than 8000 students are imparted quality education in the domains of engineering, technology, management, science, agriculture, innovation, entrepreneurship, liberal arts and humanities. The 35,000+ Kumaraguru alumni spread across 47 countries have forged a global footprint, embodying the institution's ethos and values.</p> 
 
                         <p>Commemorating <strong>41</strong> years of educational excellence, Kumaraguru Institutions remains committed to its founding vision of empowering conscientious young minds through transformative learning experience.</p>
                     </div>
@@ -397,67 +521,63 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-12">
                                 <div class="single-fun-factor mb-30">
-                                    <h2><span class="counter">3</span> </h2>
-                                    <h4>Campuses </h4>
+                                    <h2><span class="counter" data-target="3">3</span></h2>
+                                    <h4>Campuses</h4>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-12">
                                 <div class="single-fun-factor mb-30">
-                                    <h2><span class="counter">35</span>K+</h2>
-                                    <h4>Alumini</h4>
+                                    <h2><span class="counter" data-target="35">35</span>K+</h2>
+                                    <h4>Alumni</h4>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-12">
                                 <div class="single-fun-factor mb-30">
-                                    <h2><span class="counter">25</span></h2>
+                                    <h2><span class="counter" data-target="25">25</span></h2>
                                     <h4>UG Programmes</h4>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-12">
                                 <div class="single-fun-factor mb-30">
-                                    <h2><span class="counter">20</span> </h2>
+                                    <h2><span class="counter" data-target="20">20</span></h2>
                                     <h4>PG Programmes</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <script>
-                        // Function to initialize the counter once on page load
-                        function initializeCounter() {
-                            // Get the stats section
-                            const statsSection = document.getElementById('stats');
-                    
-                            // Check if the counter has already been initialized using a custom attribute
-                            if (statsSection.getAttribute('data-initialized') === 'true') {
-                                return; // If initialized, do nothing
-                            }
-                    
-                            // Set the 'data-initialized' attribute to prevent reinitialization
-                            statsSection.setAttribute('data-initialized', 'true');
-                    
-                            // Initialize the counters (Example: Modify the counter logic as per your need)
-                            const counters = document.querySelectorAll('.counter');
-                    
-                            counters.forEach(counter => {
-                                let target = parseInt(counter.getAttribute('data-target'), 10);
-                                let count = 0;
-                    
-                                // Smooth counter animation
-                                const interval = setInterval(() => {
-                                    if (count < target) {
-                                        count++;
-                                        counter.textContent = count;
-                                    } else {
-                                        clearInterval(interval); // Stop the counter when target is reached
-                                    }
-                                }, 20); // Adjust the speed here if needed
-                            });
+                    <style>
+                        .counter {
+                            display: inline-block;
+                            min-width: 1em;
                         }
-                    
-                        // Initialize the counter when the page loads, if it's not already initialized
-                        window.addEventListener('load', function() {
-                            initializeCounter();
+                    </style>
+
+                    <script>
+                        // Immediately set the values and prevent any changes
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const counters = document.querySelectorAll('.counter');
+                            const values = {
+                                '3': '3',
+                                '35': '35',
+                                '25': '25',
+                                '20': '20'
+                            };
+                            
+                            counters.forEach(counter => {
+                                const target = counter.getAttribute('data-target');
+                                counter.textContent = values[target];
+                                
+                                // Prevent any changes to the counter value
+                                Object.defineProperty(counter, 'textContent', {
+                                    get: function() {
+                                        return values[target];
+                                    },
+                                    set: function() {
+                                        return values[target];
+                                    }
+                                });
+                            });
                         });
                     </script>
 
@@ -476,7 +596,7 @@
                                 <div class="section-title-wrapper">
                                     <!-- <div class="section-title">
                                          <h3>OUR Ecosystem</h3>
-                                        <h4>Situated across three sprawling campuses spanning 280 acres, Kumaraguru Institutions offers 25 Undergraduate programmes, 20 Postgraduate programmes and as many research programmes. Presently, more than 8000 students are imparted quality education in the domains of engineering, technology, management, science, agriculture, innovation, entrepreneurship, liberal arts and humanities. The 35,000+ Kumaraguru alumni spread across 47 countries have forged a global footprint, embodying the institution’s ethos and values.</h4> 
+                                        <h4>Situated across three sprawling campuses spanning 280 acres, Kumaraguru Institutions offers 25 Undergraduate programmes, 20 Postgraduate programmes and as many research programmes. Presently, more than 8000 students are imparted quality education in the domains of engineering, technology, management, science, agriculture, innovation, entrepreneurship, liberal arts and humanities. The 35,000+ Kumaraguru alumni spread across 47 countries have forged a global footprint, embodying the institution's ethos and values.</h4> 
 
                                     </div> -->
                                 </div>
@@ -566,7 +686,7 @@
                             <div class="section-title">
                                 <h3>OUR Ecosystem</h3>
                                <!--<p>There are many variations of passages</p> -->
-                               <p style="font-family: 'Poppins', sans-serif; font-size: 15px;">Situated across three sprawling campuses spanning 280 acres, Kumaraguru Institutions offers 25 Undergraduate programmes, 20 Postgraduate programmes and as many research programmes. Presently, more than 8000 students are imparted quality education in the domains of engineering, technology, management, science, agriculture, innovation, entrepreneurship, liberal arts and humanities. The 35,000+ Kumaraguru alumni spread across 47 countries have forged a global footprint, embodying the institution’s ethos and values.</p> 
+                               <p style="font-family: 'Montserrat', sans-serif; font-size: 15px;">Situated across three sprawling campuses spanning 280 acres, Kumaraguru Institutions offers 25 Undergraduate programmes, 20 Postgraduate programmes and as many research programmes. Presently, more than 8000 students are imparted quality education in the domains of engineering, technology, management, science, agriculture, innovation, entrepreneurship, liberal arts and humanities. The 35,000+ Kumaraguru alumni spread across 47 countries have forged a global footprint, embodying the institution's ethos and values.</p> 
 
                            </div>
 
@@ -585,10 +705,10 @@
                                     <h4  style="color: #1b2840;" class="card-title"><a href="https://www.kct.ac.in/">Kumaraguru College of Technology</a></h4>
                                     <span class="card-text">Engineering</span>
                                     <div class="social mt-2">
-                                      <a style="color: #1b2840;" href="https://www.facebook.com/KCT.edu" class="facebook mx-1"><i class="fa fa-facebook"></i></a>
-                                      <a style="color: #1b2840;" href="https://twitter.com/KCTOfficial" class="twitter mx-1"><i class="fa fa-twitter"></i></a>
-                                      <a style="color: #1b2840;" href="https://www.linkedin.com/school/9561317/admin/feed/posts/" class="linkedin mx-1"><i class="fa fa-linkedin"></i></a>
-                                      <a style="color: #1b2840;" href="https://www.instagram.com/kct_84/" class="google mx-1"><i class="fa fa-instagram"></i></a>
+                                      <a style="color: #1b2840;" href="https://www.facebook.com/KCT.edu" class="facebook mx-1"><i class="fab fa-facebook-f"></i></a>
+                                      <a style="color: #1b2840;" href="https://twitter.com/KCTOfficial" class="twitter mx-1"><i class="fab fa-twitter"></i></a>
+                                      <a style="color: #1b2840;" href="https://www.linkedin.com/school/9561317/admin/feed/posts/" class="linkedin mx-1"><i class="fab fa-linkedin-in"></i></a>
+                                      <a style="color: #1b2840;" href="https://www.instagram.com/kct_84/" class="google mx-1"><i class="fab fa-instagram"></i></a>
                                     </div>
                                   </div>
                                 </div>
@@ -608,10 +728,10 @@
                                     <h4  style="color: #0D84BB;" class="card-title"><a href="https://www.kctbs.ac.in/">KCT Business School</a></h4>
                                     <span class="card-text">Management</span>
                                     <div class="social mt-2">
-                                      <a style="color: #0D84BB;"  href="https://www.facebook.com/KCT.BS/" class="facebook mx-1"><i class="fa fa-facebook"></i></a>
-                                      <a style="color: #0D84BB;" href="https://twitter.com/KCTBSOfficial" class="twitter mx-1"><i class="fa fa-twitter"></i></a>
-                                      <a style="color: #0D84BB;" href="https://www.linkedin.com/company/91096277/admin/" class="linkedin mx-1"><i class="fa fa-linkedin"></i></a>
-                                      <a style="color: #0D84BB;" href="https://www.instagram.com/kct.bs/" class="google mx-1"><i class="fa fa-instagram"></i></a>
+                                      <a style="color: #0D84BB;"  href="https://www.facebook.com/KCT.BS/" class="facebook mx-1"><i class="fab fa-facebook-f"></i></a>
+                                      <a style="color: #0D84BB;" href="https://twitter.com/KCTBSOfficial" class="twitter mx-1"><i class="fab fa-twitter"></i></a>
+                                      <a style="color: #0D84BB;" href="https://www.linkedin.com/company/91096277/admin/" class="linkedin mx-1"><i class="fab fa-linkedin-in"></i></a>
+                                      <a style="color: #0D84BB;" href="https://www.instagram.com/kct.bs/" class="google mx-1"><i class="fab fa-instagram"></i></a>
                                     </div>
                                   </div>
                                 </div>
@@ -631,10 +751,10 @@
                                     <h4 style="color: #780E42;" class="card-title"><a href="https://www.kclas.ac.in/">KCLAS</a></h4>
                                     <span class="card-text">Liberal Arts & Science</span>
                                     <div class="social mt-2">
-                                      <a style="color: #780E42;" href="https://www.facebook.com/WeareKCLAS?mibextid=ZbWKwL" class="facebook mx-1"><i class="fa fa-facebook"></i></a>
-                                      <a style="color: #780E42;" href="https://x.com/KCLASOfficial?t=TL6pEQiq9v-giOIKVI24dA&amp;s=08" class="twitter mx-1"><i class="fa fa-twitter"></i></a>
-                                      <a style="color: #780E42;" href="https://www.linkedin.com/company/kumaraguru-college-of-liberal-arts-and-science/" class="linkedin mx-1"><i class="fa fa-linkedin"></i></a>
-                                      <a style="color: #780E42;" href="https://www.instagram.com/kclas_/" class="google mx-1"><i class="fa fa-instagram"></i></a>
+                                      <a style="color: #780E42;" href="https://www.facebook.com/WeareKCLAS?mibextid=ZbWKwL" class="facebook mx-1"><i class="fab fa-facebook-f"></i></a>
+                                      <a style="color: #780E42;" href="https://x.com/KCLASOfficial?t=TL6pEQiq9v-giOIKVI24dA&amp;s=08" class="twitter mx-1"><i class="fab fa-twitter"></i></a>
+                                      <a style="color: #780E42;" href="https://www.linkedin.com/company/kumaraguru-college-of-liberal-arts-and-science/" class="linkedin mx-1"><i class="fab fa-linkedin-in"></i></a>
+                                      <a style="color: #780E42;" href="https://www.instagram.com/kclas_/" class="google mx-1"><i class="fab fa-instagram"></i></a>
                                     </div>
                                   </div>
                                 </div>
@@ -654,10 +774,10 @@
                                     <h4 style="color: #2E6051;" class="card-title"><a href="https://kia.ac.in/">Kumaraguru Institute of Agriculture</a></h4>
                                     <span class="card-text">Agriculture</span>
                                     <div class="social mt-2">
-                                      <a style="color: #2E6051;" href="https://www.facebook.com/people/Kumaraguru-Institute-Of-Agriculture/100057312014997/" class="facebook mx-1"><i class="fa fa-facebook"></i></a>
-                                      <a style="color: #2E6051;" href="https://x.com/kumaraguru_agri" class="twitter mx-1"><i class="fa fa-twitter"></i></a>
-                                      <a  style="color: #2E6051;"href="https://www.linkedin.com/company/kumaraguru-institute-of-agriculture/" class="linkedin mx-1"><i class="fa fa-linkedin"></i></a>
-                                      <a style="color: #2E6051;" href="https://www.instagram.com/kia.agri/" class="google mx-1"><i class="fa fa-instagram"></i></a>
+                                      <a style="color: #2E6051;" href="https://www.facebook.com/people/Kumaraguru-Institute-Of-Agriculture/100057312014997/" class="facebook mx-1"><i class="fab fa-facebook-f"></i></a>
+                                      <a style="color: #2E6051;" href="https://x.com/kumaraguru_agri" class="twitter mx-1"><i class="fab fa-twitter"></i></a>
+                                      <a  style="color: #2E6051;"href="https://www.linkedin.com/company/kumaraguru-institute-of-agriculture/" class="linkedin mx-1"><i class="fab fa-linkedin-in"></i></a>
+                                      <a style="color: #2E6051;" href="https://www.instagram.com/kia.agri/" class="google mx-1"><i class="fab fa-instagram"></i></a>
                                     </div>
                                   </div>
                                 </div>
@@ -678,10 +798,10 @@
                                     <h4 style="color: #1C3B8E;" class="card-title"><a href="https://www.ksbedu.in/">Kumaraguru School of Business</a></h4>
                                     <span class="card-text">Business</span>
                                     <div class="social mt-2">
-                                      <a style="color: #1C3B8E;" href="https://www.facebook.com/sngims.snget" class="facebook mx-1"><i class="fa fa-facebook"></i></a>
-                                      <a style="color: #1C3B8E;" href="https://x.com/KSB_Kumaraguru" class="twitter mx-1"><i class="fa fa-twitter"></i></a>
-                                      <a style="color: #1C3B8E;" href="https://www.linkedin.com/company/kumaraguru-school-of-business-ksb/" class="linkedin mx-1"><i class="fa fa-linkedin"></i></a>
-                                      <a style="color: #1C3B8E;" href="https://www.instagram.com/kumaraguruschoolofbusiness/" class="google mx-1"><i class="fa fa-instagram"></i></a>
+                                      <a style="color: #1C3B8E;" href="https://www.facebook.com/sngims.snget" class="facebook mx-1"><i class="fab fa-facebook-f"></i></a>
+                                      <a style="color: #1C3B8E;" href="https://x.com/KSB_Kumaraguru" class="twitter mx-1"><i class="fab fa-twitter"></i></a>
+                                      <a style="color: #1C3B8E;" href="https://www.linkedin.com/company/kumaraguru-school-of-business-ksb/" class="linkedin mx-1"><i class="fab fa-linkedin-in"></i></a>
+                                      <a style="color: #1C3B8E;" href="https://www.instagram.com/kumaraguruschoolofbusiness/" class="google mx-1"><i class="fab fa-instagram"></i></a>
                                     </div>
                                   </div>
                                 </div>
@@ -701,10 +821,10 @@
                                     <h4 style="color: #2C6152;" class="card-title"><a href="#">Kumaraguru School of Innovation</a></h4>
                                     <span class="card-text">Innovation</span>
                                     <div class="social mt-2">
-                                      <a style="color: #2C6152;" href="https://www.facebook.com/KCT.edu" class="facebook mx-1"><i class="fa fa-facebook"></i></a>
-                                      <a style="color: #2C6152;" href="https://twitter.com/KCTOfficial" class="twitter mx-1"><i class="fa fa-twitter"></i></a>
-                                      <a style="color: #2C6152;" href="https://www.linkedin.com/school/9561317/admin/feed/posts/" class="linkedin mx-1"><i class="fa fa-linkedin"></i></a>
-                                      <a style="color: #1b2840;" href="https://www.instagram.com/innovateatksi/" class="google mx-1"><i class="fa fa-instagram"></i></a>
+                                      <a style="color: #2C6152;" href="https://www.facebook.com/KCT.edu" class="facebook mx-1"><i class="fab fa-facebook-f"></i></a>
+                                      <a style="color: #2C6152;" href="https://twitter.com/KCTOfficial" class="twitter mx-1"><i class="fab fa-twitter"></i></a>
+                                      <a style="color: #2C6152;" href="https://www.linkedin.com/school/9561317/admin/feed/posts/" class="linkedin mx-1"><i class="fab fa-linkedin-in"></i></a>
+                                      <a style="color: #2C6152;" href="https://www.instagram.com/innovateatksi/" class="google mx-1"><i class="fab fa-instagram"></i></a>
                                     </div>
                                   </div>
                                 </div>
@@ -881,7 +1001,7 @@
                                     <h3>RIDE at Kumaraguru:</h3>
 
                                 </div>
-                                                                    <p>A Thriving Ecosystem of Possibilities At Kumaraguru Institutions, RIDE is not just a concept but a lived reality, seamlessly woven into the institution’s ethos. The ecosystem at Kumaraguru thrives on the synergy of these four pillars, creating an environment where students, faculty, and industry partners converge to explore, create, and transform thereby becoming creative thinkers, problem-solvers, and changemakers.</p>
+                                                                    <p>A Thriving Ecosystem of Possibilities At Kumaraguru Institutions, RIDE is not just a concept but a lived reality, seamlessly woven into the institution's ethos. The ecosystem at Kumaraguru thrives on the synergy of these four pillars, creating an environment where students, faculty, and industry partners converge to explore, create, and transform thereby becoming creative thinkers, problem-solvers, and changemakers.</p>
                                    <p> With state-of-the-art research centres, innovation hubs, industry partnerships, and incubation cells, Kumaraguru empowers its students and faculty to explore new frontiers and bring impactful ideas to life.</p>
                                     <a class="button-default" href="img/about/Kumaraguru RiDE 1.pdf">Download Now</a>	
 
@@ -894,7 +1014,7 @@
                 <!--Testimonial Area End-->
 
                                 <!--Testimonial2 Area Start-->
-                                <div  id="ride-section2" class="testimonial-area" style="background-color: rgb(235, 232, 232) !important;">
+                                <div id="ride-section2" class="testimonial-area" style="background-color: rgb(235, 232, 232) !important; display: none !important;">
                                     <div class="container">
                                         <!-- <div class="row">
                                             <div class="testimonial-slider-2 owl-carousel">
@@ -1027,8 +1147,8 @@
                                                                 <li>Joint faculty development programs</li>
                                                                 <li>Expert lectures, panel discussions, and symposiums</li>
                                                             </ul><br>
-                                                            <p><strong>Let’s create a future of learning without borders!</strong></p>
-                                                            <p><strong>Interested in partnering with us? Let’s start the conversation!</strong></p>
+                                                            <p><strong>Let's create a future of learning without borders!</strong></p>
+                                                            <p><strong>Interested in partnering with us? Let's start the conversation!</strong></p>
                                                             <p><strong>Dr. Vijila Edwin-Kennedy</strong><br>Director, Global Engagements<br>Email: vijila@kclas.ac.in</p>
                                                           </div>
                                                           <div class="modal-footer">
@@ -1140,13 +1260,13 @@
                                 <div class="col-lg-3 col-md-6">
                                     <div class="single-footer-widget">
                                         <!-- <h3>Social Media</h3> -->
-                                        <ul class="list-unstyled social-media-icon">
-                                            <li><a href="https://www.facebook.com/KCT.edu/"><i class="fab fa-facebook-square"></i></a></li>
+                                        <!-- <ul class="list-unstyled social-media-icon">
+                                            <li><a href="https://www.facebook.com/KCT.edu/"><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href="https://www.instagram.com/kct_84/"><i class="fab fa-instagram"></i></a></li>
                                             <li><a href="https://twitter.com/KCTOfficial"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="https://www.linkedin.com/school/kct/"><i class="fab fa-linkedin"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/school/kct/"><i class="fab fa-linkedin-in"></i></a></li>
                                             <li><a href="https://www.youtube.com/channel/UCQ71Y6dp5f-HZaKB4ZQZDlg"><i class="fab fa-youtube"></i></a></li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
@@ -1173,7 +1293,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-md-7 col-12">
-                                    <span>Copyright &copy; 2024 KCT. All Rights Reserved.Made with ❤️ <a href="https://iqubekct.ac.in">iQube</a></span>
+                                    <span>Copyright &copy; 2025 KCT. All Rights Reserved.Made with ❤️ <a href="https://iqubekct.ac.in">iQube</a></span>
                                 </div>
                                 <div class="col-lg-6 col-md-5 col-12">
                                     <div class="column-right">
@@ -1195,28 +1315,64 @@
         
 		<!-- jquery
 		============================================ -->		
-        <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-        <script src="js/vendor/jquery-3.6.0.min.js"></script>
-        <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <script src="./js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="./js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="./js/vendor/jquery-migrate-3.3.2.min.js"></script>
         
 		<!-- popper JS
 		============================================ -->		
-        <script src="js/popper.min.js"></script>
+        <script src="./js/popper.min.js"></script>
         
 		<!-- bootstrap JS
 		============================================ -->		
-        <script src="js/bootstrap.min.js"></script>
-        
-		<!-- AJax Mail JS
-		============================================ -->		
-        <script src="js/ajax-mail.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
         
 		<!-- plugins JS
 		============================================ -->		
-        <script src="js/plugins.js"></script>
+        <script src="./js/plugins.js"></script>
         
 		<!-- main JS
 		============================================ -->		
-        <script src="js/main.js"></script>
+        <script src="./js/main.js"></script>
+
+        <script>
+            // Wait for document ready and all resources to load
+            $(document).ready(function() {
+                // Initialize plugins after jQuery is fully loaded
+                try {
+                    if (typeof $.fn.meanMenu !== 'undefined') {
+                        $('.mainmenu').meanMenu();
+                    }
+                    
+                    if (typeof $.fn.owlCarousel !== 'undefined') {
+                        $('.testimonial-slider-2').owlCarousel({
+                            items: 1,
+                            loop: true,
+                            margin: 30,
+                            autoplay: true,
+                            autoplayTimeout: 5000,
+                            autoplayHoverPause: true,
+                            nav: true,
+                            dots: true
+                        });
+                    }
+
+                    // Initialize WOW.js if available
+                    if (typeof WOW !== 'undefined') {
+                        new WOW().init();
+                    }
+
+                    // Initialize counter if available
+                    if (typeof $.fn.counterUp !== 'undefined') {
+                        $('.counter').counterUp({
+                            delay: 10,
+                            time: 1000
+                        });
+                    }
+                } catch (error) {
+                    console.error('Error initializing plugins:', error);
+                }
+            });
+        </script>
     </body>
 </html>
